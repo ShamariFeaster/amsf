@@ -1,0 +1,98 @@
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PPHttpConnection: Payload {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4417119669820331","expire_month":"11","expire_year":"2019","cvv2":"012","first_name":"Joe","last_name":"Shopper","billing_address":{"line1":"3909 Witmer Road","line2":"Niagara Falls","city":"Niagara Falls","state":"NY","postal_code":"14305","country_code":"US","phone":"716-298-1822"}}}]},"transactions":[{"amount":{"currency":"USD","total":"1.00"},"description":"This is the payment description."}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: Request1463279128
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PPHttpConnection: Payload {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4417119669820331","expire_month":"11","expire_year":"2019","cvv2":"012","first_name":"Joe","last_name":"Shopper","billing_address":{"line1":"3909 Witmer Road","line2":"Niagara Falls","city":"Niagara Falls","state":"NY","postal_code":"14305","country_code":"US","phone":"716-298-1822"}}}]},"transactions":[{"amount":{"currency":"USD","total":"1.00"},"description":"This is the payment description."}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: Request1463279307
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-0XL713371A312273YKE2GCNI
+PPHttpConnection: Payload 
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PayPal\Rest\Call: {"id":"PAY-0XL713371A312273YKE2GCNI","create_time":"2013-03-04T08:54:13Z","update_time":"2013-03-04T08:58:33Z","state":"approved","intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2018","first_name":"Joe","last_name":"Shopper","billing_address":{"line1":"52 N Main ST","city":"Johnstown","state":"OH","postal_code":"43210","country_code":"US"}}}]},"transactions":[{"amount":{"total":"7.00","currency":"USD","details":{"subtotal":"5.00","tax":"1.00","shipping":"1.00"}},"description":"This is the payment transaction description.","related_resources":[{"sale":{"id":"5A624005YA5252209","create_time":"2013-03-04T08:54:13Z","update_time":"2013-03-04T08:58:33Z","amount":{"total":"7.00","currency":"USD"},"state":"refunded","parent_payment":"PAY-0XL713371A312273YKE2GCNI","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/5A624005YA5252209","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/5A624005YA5252209/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0XL713371A312273YKE2GCNI","rel":"parent_payment","method":"GET"}]}},{"refund":{"id":"90531239NM107171A","create_time":"2013-03-04T08:58:33Z","update_time":"2013-03-04T08:58:33Z","state":"completed","amount":{"total":"-7.00","currency":"USD"},"sale_id":"5A624005YA5252209","parent_payment":"PAY-0XL713371A312273YKE2GCNI","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/refund/90531239NM107171A","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0XL713371A312273YKE2GCNI","rel":"parent_payment","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/5A624005YA5252209","rel":"sale","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-0XL713371A312273YKE2GCNI","rel":"self","method":"GET"}]}
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PPHttpConnection: Payload {"intent":"sale","payer":{"payment_method":"paypal"},"redirect_urls":{"return_url":"http:\/\/localhost\/my-src\/lookahead\/server\/vendor\/paypal\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=true","cancel_url":"http:\/\/localhost\/my-src\/lookahead\/server\/vendor\/paypal\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=false"},"transactions":[{"amount":{"currency":"USD","total":"1.00"},"description":"This is the payment description."}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: Request1463279330
+PayPal\Rest\Call: {"id":"PAY-94A97012238324353K4355YY","intent":"sale","state":"created","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"total":"1.00","currency":"USD"},"description":"This is the payment description.","related_resources":[]}],"create_time":"2016-05-15T02:28:51Z","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-94A97012238324353K4355YY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-7DY59107WN718424T","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-94A97012238324353K4355YY/execute","rel":"execute","method":"POST"}]}
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/sale/3RM92092UW5126232/refund
+PPHttpConnection: Payload {"amount":{"currency":"USD","total":"0.01"}}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: Request1463279355
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-5BT058015C739554AKE2GCEI
+PPHttpConnection: Payload 
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PayPal\Rest\Call: {"id":"CARD-5BT058015C739554AKE2GCEI","state":"expired","type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2018","valid_until":"2016-03-03T00:00:00Z","create_time":"2013-03-04T08:53:37Z","update_time":"2016-05-15T02:29:31Z","links":[{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-5BT058015C739554AKE2GCEI","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-5BT058015C739554AKE2GCEI","rel":"delete","method":"DELETE"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-5BT058015C739554AKE2GCEI","rel":"patch","method":"PATCH"}]}
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PPHttpConnection: Payload {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card_token":{"credit_card_id":"CARD-5BT058015C739554AKE2GCEI"}}]},"transactions":[{"amount":{"currency":"USD","total":"1.00"},"description":"This is the payment description."}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: Request1463279383
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/vault/credit-card
+PPHttpConnection: Payload {"type":"visa","number":"4417119669820331","expire_month":"11","expire_year":"2019","cvv2":"012","first_name":"Joe","last_name":"Shopper"}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.12;Bit=32;OS=Windows_NT_6.1;Machine=AMD64;Openssl=1.0.1g;curl=7.36.0)
+PPHttpConnection: Adding header Authorization: Bearer A101.vtFu4v-XO5HCyjv8JQgMs-53KVSnlthEadgevLrRtBe7xQ6YiuD3hlO9k5sFZdNO.WJv-jkFhwIBIJ-6uerw2xA1gQYO
+PPHttpConnection: Adding header PayPal-Request-Id: 23240146327940353899
+PayPal\Rest\Call: {"id":"CARD-15U87639BV213930VK4356LA","state":"ok","type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2019","first_name":"Joe","last_name":"Shopper","valid_until":"2019-05-15T00:00:00Z","create_time":"2016-05-15T02:30:04Z","update_time":"2016-05-15T02:30:04Z","links":[{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-15U87639BV213930VK4356LA","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-15U87639BV213930VK4356LA","rel":"delete","method":"DELETE"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-15U87639BV213930VK4356LA","rel":"patch","method":"PATCH"}]}

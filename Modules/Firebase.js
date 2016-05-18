@@ -21,8 +21,9 @@ structureJS.module('Firebase', function(require){
     this.expires = parseInt(truncatedTime()) + (requestForm.expires.current_selection * 60);
     this.offer = requestForm.offer;
     this.created = truncatedTime();
-    this.title = requestForm.name;
-    this.description = requestForm.details;
+    this.title = requestForm.title;
+    this.description = requestForm.description;
+    this.length = requestForm.length;
   }
   
 

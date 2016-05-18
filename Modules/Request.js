@@ -3,10 +3,13 @@ structureJS.module('Request', function(require){
       profile = Templar.getModel('Profile'),
       req = Templar.getModel('RequestForm');
   
-  var btn = document.getElementById('save-req');
-  btn.addEventListener('click', function(e){
-    firebase.saveReq();
+  Templar.success('partials/new-request.html', function(){
+    var btn = document.getElementById('save-req');
+    btn.addEventListener('click', function(e){
+      firebase.saveReq();
+    });
   });
+  
   
   
 });

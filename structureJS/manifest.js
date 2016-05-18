@@ -20,6 +20,7 @@ structureJS.declare('templar/Bootstrap');
 structureJS.declare('templar/Export');
 
 /*App*/
+structureJS.declare('modules/Routes');
 structureJS.declare('modules/Model');
 structureJS.declare('https://cdn.firebase.com/js/client/2.4.2/firebase.js');
 structureJS.declare('https://cdn.firebase.com/libs/geofire/4.0.0/geofire.min.js');
@@ -30,3 +31,6 @@ structureJS.declare('modules/AutoComplete');
 structureJS.declare('modules/GMaps');
 structureJS.declare('modules/Profile');
 structureJS.declare('modules/Request');
+structureJS.declare('modules/Settings');
+structureJS.declare('modules/MatchedOrders');
+structureJS.declare('modules/MyOrders');

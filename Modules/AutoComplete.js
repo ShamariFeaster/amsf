@@ -2,7 +2,8 @@ structureJS.module('AutoComplete', function(require){
 //https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
 var placeSearch, 
     autocomplete,
-    _map = require('Root'),
+    _map,
+    _lat, _lng,
     reqForm = Templar.getModel('RequestForm');
     
 var componentForm = {
@@ -18,25 +19,24 @@ function initAutocomplete() {
   // Create the autocomplete object, restricting the search to geographical
   // location types.
   autocomplete = new google.maps.places.Autocomplete(
-      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-      {types: ['geocode']});
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')));
 
   // When the user selects an address from the dropdown, populate the address
   // fields in the form.
   autocomplete.addListener('place_changed', function(){
     var place = autocomplete.getPlace();
     console.log(place);
-    reqForm.lat = place.geometry.location.lat();
-    reqForm.lng = place.geometry.location.lng();
+    reqForm.lat = _lat = place.geometry.location.lat();
+    reqForm.lng = _lng = place.geometry.location.lng();
     
     var marker = new google.maps.Marker({
       position: {lat: reqForm.lat, lng: reqForm.lng},
-      map: _map.map,
+      map: _map,
       title: 'Hello World!'
     });
     
-    _map.map.setCenter(marker.getPosition());
-    _map.map.setZoom(16);
+    _map.setCenter(marker.getPosition());
+    _map.setZoom(16);
   });
 }
 
@@ -59,6 +59,28 @@ function geolocate() {
   }
 }
 
-initAutocomplete();
+Templar.success('partials/new-request.html', function(){
+  
+  navigator.geolocation.getCurrentPosition(function(position) {
+    _lat = position.coords.latitude;
+    _lng = position.coords.longitude;
+    _map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: _lat, lng: _lng},
+      zoom: 14
+    });
+    
+    initAutocomplete();
+  });
+  
+  if(_lat && _lng){
+    _map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: _lat, lng: _lng},
+      zoom: 14
+    });
+    initAutocomplete();
+  }
+  
+});
+
 
 });

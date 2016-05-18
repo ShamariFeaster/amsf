@@ -18,7 +18,7 @@ Templar.dataModel('RequestForm',{
   lat : 0,
   lng : 0,
   name : 'eg, Show me the club line',
-  details : 'eg, why I want to see the club line',
+  description : 'eg, why I want to see the club line',
   length : [{text : '1 Minute', value : 1, selected : true}, 
             {text : '2 Minutes', value : 2},
             {text : '3 Minutes', value : 3},
@@ -47,5 +47,6 @@ Templar.dataModel('Profile',{
   id : 0,
   myReqs : [],
   lat : -1,
-  lng : -1
+  lng : -1,
+  notifications : true
 });

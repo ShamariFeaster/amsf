@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
       html, body {
         height: 100%;
@@ -10,8 +12,7 @@
         padding: 0;
       }
       #map {
-        height: 250px;
-		width: 250px;
+        height: 500px;
       }
     </style>
   <title>Lookahead</title>
@@ -19,67 +20,36 @@
 </head>
 
 <body>
-<h2>Profile</h2>
-<img src="{{Profile.imgSrc}}"/>
-<div>{{Profile.loginStatus}}</div>
 
-Show me request within {{Profile.range}} miles of me.<br />
-<input type="range" name="price-min" id="price-min" value="{{Profile.range}}" min="0" max="25">
+    <div id="wrapper">
 
-<h2>My Requests</h2>
+		<!-- nav -->
+		<div id="nav-header" data-apl-default="partials/nav/header.html"></div>
+		<div id="nav-sidebar" data-apl-default="partials/nav/sidebar.html"></div>
+        <div id="page-wrapper">
+            <!-- Content -->
+			<div id="main-content" data-apl-default="partials/new-request.html"></div>
+        </div>
+        <!-- /#page-wrapper -->
 
-<table>
-	<tr data-apl-repeat="{{Profile.myReqs}}">
-		<td>{{title}}</td>
-		<td>{{details}}</td>
-		<td>{{offer}}</td>
-		<td>{{length}}</td>
-		<td>{{expires}}</td>
-		<td><button id="{{id}}">Cancel</button>
-	</tr>
-</table>
+    </div>
+    <!-- /#wrapper -->
 
-<h2>Matching Requests</h2>
-
-<table>
-	<tr data-apl-repeat="{{Geofire.matchingReqs}}">
-		<td>{{$item}}.request.title</td>
-		<td>{{$item}}.request.details</td>
-		<td>{{$item}}.request.offer</td>
-		<td>{{$item}}.request.length</td>
-		<td>{{$item}}.request.expires</td>
-		<td><button id="{{$item}}.request.id">Accept</button>
-	</tr>
-</table>
-
-<a href="fb://profile/" id="shareButton">Open FB Profile</a>
-
-<h2>Make Request</h2>
-Search: <input value="{{RequestForm.search}}" id="autocomplete"/> <br/>
-Request Title: <input value="{{RequestForm.name}}"/> <br />
-Details: <textarea value="{{RequestForm.details}}"></textarea><br />
-Stream Length: <select>{{RequestForm.length}}</select><br />
-Offer: $<input value="{{RequestForm.offer}}"/> <br />
-Expires: <select>{{RequestForm.expires}}</select> <br />
-<button id="save-req">Save Request</button>
-
-<div id="map"></div>
-    
 <script src="../structureJS/core/structureJS-core.js" id="structureJS"
         data-project-manifest="structureJS/manifest"
         data-project-config="structureJS/config">
 </script>
 
-<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 <script>
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

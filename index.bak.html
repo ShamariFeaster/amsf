@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 250px;
+		width: 250px;
+      }
+    </style>
+  <title>Lookahead</title>
+  
+</head>
+
+<body>
+<h2>Profile</h2>
+<img src="{{Profile.imgSrc}}"/>
+<div>{{Profile.loginStatus}}</div>
+
+Show me request within {{Profile.range}} miles of me.<br />
+<input type="range" name="price-min" id="price-min" value="{{Profile.range}}" min="0" max="25">
+
+<h2>My Requests</h2>
+
+<table>
+	<tr data-apl-repeat="{{Profile.myReqs}}">
+		<td>{{title}}</td>
+		<td>{{details}}</td>
+		<td>{{offer}}</td>
+		<td>{{length}}</td>
+		<td>{{expires}}</td>
+		<td><button id="{{id}}">Cancel</button>
+	</tr>
+</table>
+
+<h2>Matching Requests</h2>
+
+<table>
+	<tr data-apl-repeat="{{Geofire.matchingReqs}}">
+		<td>{{$item}}.request.title</td>
+		<td>{{$item}}.request.details</td>
+		<td>{{$item}}.request.offer</td>
+		<td>{{$item}}.request.length</td>
+		<td>{{$item}}.request.expires</td>
+		<td><button id="{{$item}}.request.id">Accept</button>
+	</tr>
+</table>
+
+<a href="fb://profile/" id="shareButton">Open FB Profile</a>
+
+<h2>Make Request</h2>
+Search: <input value="{{RequestForm.search}}" id="autocomplete"/> <br/>
+Request Title: <input value="{{RequestForm.name}}"/> <br />
+Details: <textarea value="{{RequestForm.details}}"></textarea><br />
+Stream Length: <select>{{RequestForm.length}}</select><br />
+Offer: $<input value="{{RequestForm.offer}}"/> <br />
+Expires: <select>{{RequestForm.expires}}</select> <br />
+<button id="save-req">Save Request</button>
+
+<div id="map"></div>
+
+<script src="../structureJS/core/structureJS-core.js" id="structureJS"
+        data-project-manifest="structureJS/manifest"
+        data-project-config="structureJS/config">
+</script>
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
+
+
+

@@ -9,18 +9,9 @@ structureJS.module('Controller.Data', function(require){
 
 structureJS.module('Root', function(require){
 
-var ret = {
-  map: null
-};
 
 window.initMap = function() {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    ret.map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: position.coords.latitude, lng: position.coords.longitude},
-      zoom: 14
-    });
-  });
-  
+  console.log('Maps Loaded.....')  
 }
 
 window.fbAsyncInit = function() {
@@ -32,8 +23,6 @@ window.fbAsyncInit = function() {
     });
   };
 
-  
-return ret;
 
 });
 

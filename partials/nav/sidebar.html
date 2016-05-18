@@ -1,0 +1,25 @@
+<div class="navbar-default sidebar" role="navigation">
+	<div class="sidebar-nav navbar-collapse">
+		<ul class="nav" id="side-menu">
+			<li>
+				<img src="{{Profile.imgSrc}}"/>
+			</li>
+			<li>
+				<div>{{Profile.loginStatus}}</div>
+			</li>
+			<li>
+				<a href="#new-request"><i class="fa fa-edit fa-fw"></i> Order A Stream</a>
+			</li>
+			<li>
+				<a href="#settings"><i class="fa fa-dashboard fa-fw"></i> Settings</a>
+			</li>
+			<li>
+				<a href="#matched-orders"><i class="fa fa-location-arrow fa-fw"></i> Orders In My Area <span class="badge">{{Geofire.matchingReqs.length}}</span></a>
+			</li>
+			<li>
+				<a href="#my-orders"><i class="fa fa-shopping-cart fa-fw"></i> My Orders <span class="badge">{{Geofire.matchingReqs.length}}</span></a>
+			</li>
+
+	</div>
+	<!-- /.sidebar-collapse -->
+</div>

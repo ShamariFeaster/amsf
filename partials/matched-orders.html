@@ -17,7 +17,7 @@
 								<th>Title</th>
 								<th>Details</th>
 								<th>Offer</th>
-								<th>Length</th>
+								<th>Length (minutes)</th>
 								<th>Expires</th>
 								<th>Accept?</th>
 							</tr>
@@ -29,7 +29,7 @@
 								<td>${{$item}}.request.offer</td>
 								<td>{{$item}}.request.length</td>
 								<td>{{$item}}.request.expires</td>
-								<td><button class="btn btn-primary" id="{{$item}}.request.id">Accept</button>
+								<td><button class="btn btn-primary accept" id="{{$item}}.key">Accept</button>
 							</tr>
 						</tbody>
 					</table>

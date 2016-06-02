@@ -23,7 +23,7 @@ structureJS.module('Firebase', function(require){
     this.created = truncatedTime();
     this.title = requestForm.title;
     this.description = requestForm.description;
-    this.length = requestForm.length;
+    this.length = requestForm.length.current_selection;
   }
   
 

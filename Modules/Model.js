@@ -12,12 +12,13 @@ Templar.dataModel('Environment',
               
               image_templar : 'images/Cross_Templar.svg'
             });
-            
+           
+         
 Templar.dataModel('RequestForm',{
   search : '608 Holcomb Bridge Road, Roswell, GA, United States',
   lat : 0,
   lng : 0,
-  name : 'eg, Show me the club line',
+  title : 'eg, Show me the club line',
   description : 'eg, why I want to see the club line',
   length : [{text : '1 Minute', value : 1, selected : true}, 
             {text : '2 Minutes', value : 2},
@@ -31,14 +32,22 @@ Templar.dataModel('RequestForm',{
             {text : '3 Minutes From Now', value : 3},
             {text : '4 Minutes From Now', value : 4},
             {text : '5 Minutes From Now', value : 5}
-            ]
-            
+            ],
+  accepted : false          
 });
 
 Templar.dataModel('Geofire',{
   matchingReqs : []
 });
 
+Templar.dataModel('Modal',{
+  title : '',
+  body : '',
+  dismissTxt : '',
+  acceptTxt : '',
+  acceptId : 'modal-accept',
+  dismissId : 'modal-dismiss'
+});
 
 Templar.dataModel('Profile',{
   loginStatus : '',
